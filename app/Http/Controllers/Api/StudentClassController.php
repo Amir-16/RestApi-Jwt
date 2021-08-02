@@ -37,7 +37,18 @@ class StudentClassController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+
+            'class_name' => 'required|max:50|unique:student_classes,class_name'
+
+        ]);
+
+    $data =array();
+    $data['class_name'] = $request->class_name;
+    $insert =DB::table('student_classes')->insert($data);
+    return response('insert successfully');
+
+
     }
 
     /**
@@ -48,7 +59,9 @@ class StudentClassController extends Controller
      */
     public function show($id)
     {
-        //
+         $name =DB::table('student_classes')->where('id',$id)->first();
+        return response()->json($name);
+
     }
 
     /**
@@ -59,7 +72,7 @@ class StudentClassController extends Controller
      */
     public function edit($id)
     {
-        //
+       
     }
 
     /**
@@ -71,7 +84,16 @@ class StudentClassController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+            $request->validate([
+
+            'class_name' => 'required|max:50|unique:student_classes,class_name'.$request->id
+
+        ]);
+        
+        $data = array();
+        $data['class_name'] = $request->class_name;
+        $insert =DB::table('student_classes')->where('id',$id)->update($data);
+        return response('update data successfully');
     }
 
     /**
@@ -82,6 +104,8 @@ class StudentClassController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('student_classes')->where('id',$id)->delete();
+        
+        return response('data deleted');
     }
 }
