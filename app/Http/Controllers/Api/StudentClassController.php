@@ -43,7 +43,7 @@ class StudentClassController extends Controller
 
         ]);
 
-    $data =array();
+     $data =array();
     $data['class_name'] = $request->class_name;
     $insert =DB::table('student_classes')->insert($data);
     return response('insert successfully');
