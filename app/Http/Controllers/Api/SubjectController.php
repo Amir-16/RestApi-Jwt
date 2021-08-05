@@ -17,7 +17,7 @@ class SubjectController extends Controller
     public function index()
     {
         
-        $subjects =DB::table('subjects')->get();
+        $subjects =Subject::with(['studentClass'])->get();
         return response()->json($subjects);
     }
 
@@ -64,7 +64,8 @@ class SubjectController extends Controller
      */
     public function show($id)
     {
-        //
+        $subject =Subject::find($id);
+        return response()->json($subject);
     }
 
     /**
@@ -87,7 +88,20 @@ class SubjectController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+
+            'subject_name' =>'required|max:40|unique:subjects,subject_name'.$request->id,
+            
+            'subject_code' =>'required|max:50|unique:subjects,subject_code,'.$request->id
+
+        ]);
+
+        $data =Subject::findorfail($id);
+        $data['subject_name']=$request->subject_name;
+         $data['student_class_id']=$request->student_class_id;
+        $data['subject_code']=$request->subject_code;
+        $data->update();
+       return response('Subject  successfully  updated' );
     }
 
     /**
@@ -98,6 +112,8 @@ class SubjectController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $subject=Subject::findorfail($id);
+        $subject->delete();
+        return response('Subject deleeted');
     }
 }

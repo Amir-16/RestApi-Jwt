@@ -86,7 +86,7 @@ class StudentClassController extends Controller
     {
             $request->validate([
 
-            'class_name' => 'required|max:50|unique:student_classes,class_name'.$request->id
+            'class_name' => 'required|max:50|unique:student_classes,class_name,'.$request->id
 
         ]);
         
