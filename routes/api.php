@@ -19,3 +19,20 @@ Route::ApiResource('/subjects','App\Http\Controllers\Api\SubjectController');
 
 Route::get('/students','App\Http\Controllers\Api\StudentController@index');
 Route::post('/students/store','App\Http\Controllers\Api\StudentController@store');
+Route::get('/students/edit/{id}','App\Http\Controllers\Api\StudentController@edit');
+Route::post('/students/update/{id}','App\Http\Controllers\Api\StudentController@edit');
+
+
+Route::group([
+
+    'namespace' => 'App\Http\Controllers',
+    'prefix' => 'auth'
+
+], function ($router) {
+
+    Route::post('login', 'AuthController@login');
+    Route::post('logout', 'AuthController@logout');
+    Route::post('refresh', 'AuthController@refresh');
+    Route::post('me', 'AuthController@me');
+
+});
