@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 15, 2021 at 02:32 PM
+-- Generation Time: Aug 15, 2021 at 05:56 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -118,7 +118,8 @@ INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, 
 ('iubXS9YZVR9rlsj2IB1U3i51IGNrs1N9Uyg1IHDH', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiNnhza1BldEJsc3hmS0xWM0dOS1VGZ2xMVGNqSmZzeWtEWmloMlR4NCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kYXNoYm9hcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkN1JmQ29xd3ZUeTd3a0d0ZEdtRnU4dWdGRGpQZ1QzNi4xb1JpZ1JsREd4d3ZaSGNLYXpBRU8iO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJDdSZkNvcXd2VHk3d2tHdGRHbUZ1OHVnRkRqUGdUMzYuMW9SaWdSbERHeHd2WkhjS2F6QUVPIjt9', 1627922410),
 ('K3y21dtKWmaEsVch8tl5DPIunsNeOVmqi51aVFJb', NULL, '127.0.0.1', 'PostmanRuntime/7.28.2', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMEtKV1NQdVE4SDdta2dESjZrQjByZXlBV0c3UzlWOU5xbFN6Yk5EQSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1628158097),
 ('oyOPNT3mFz6waGNZMJBrlsXuaEDsBPcTJIYtFhyU', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiUUV1RkVrd1JTdGxkek9DOFZSOE5saHlWalM5TTlaT05DWm1NM1g3ViI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1628679278),
-('TLUZKrnRI05TknC9rUh29xa5mPGDOycjJQwADRU5', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiOElNcVRXYU9VdWw5eWJxaEdpNEdQNHpwQmZKZFQ4eTk3S2dyWUp5ayI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1629020282);
+('TLUZKrnRI05TknC9rUh29xa5mPGDOycjJQwADRU5', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiOElNcVRXYU9VdWw5eWJxaEdpNEdQNHpwQmZKZFQ4eTk3S2dyWUp5ayI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1629020282),
+('ugxcxkufs2s69MjY3gBlI9iFqoiTALzT8a0lDyHM', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiUWlaeGJPQTdzSnRnS1JvOEEzWDFTTWoyRTVENUVuT2MzaDQ4SnpOcyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kYXNoYm9hcmQiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=', 1629041531);
 
 -- --------------------------------------------------------
 
@@ -220,7 +221,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Amirul Islam', 'amir@gmail.com', NULL, '$2y$10$7RfCoqwvTy7wkGtdGmFu8ugFDjPgT36.1oRigRlDGxwvZHcKazAEO', NULL, NULL, NULL, '2021-08-02 10:36:02', '2021-08-02 10:36:02');
+(1, 'Amirul Islam', 'amir@gmail.com', NULL, '$2y$10$7RfCoqwvTy7wkGtdGmFu8ugFDjPgT36.1oRigRlDGxwvZHcKazAEO', NULL, NULL, NULL, '2021-08-02 10:36:02', '2021-08-02 10:36:02'),
+(2, 'Amirul Islam', 'amirul@gmail.com', NULL, '$2y$10$9u.F3aku9nx6ligop7sscummavh.jRu.ivxayfVpb.og9/Sv1vUr6', NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -330,7 +332,7 @@ ALTER TABLE `subjects`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
